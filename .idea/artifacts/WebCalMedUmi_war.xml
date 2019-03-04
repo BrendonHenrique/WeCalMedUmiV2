@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="WebCalMedUmi:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="WebCalMedUmi.war">
+      <element id="artifact" artifact-name="WebCalMedUmi:war exploded" />
+    </root>
+  </artifact>
+</component>

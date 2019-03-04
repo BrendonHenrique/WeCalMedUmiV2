@@ -1,4 +1,7 @@
 package br.com.garten.calmedumi;
+
+import java.util.Locale;
+
 public class Amostra {
 	private Double amostraGarten;
 	private Double amostraLaboratorio;
@@ -26,5 +29,8 @@ public class Amostra {
 		this.amostraLaboratorio = amostraLaboratorio;
 	}
 
-	
+	@Override
+	public String toString() {
+		return String.format(Locale.ENGLISH,"{x: %.2f, y: %.2f},",getAmostraGarten(),getAmostraLaboratorio());
+	}
 }
