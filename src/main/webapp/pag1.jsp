@@ -6,20 +6,21 @@
 <%@page import="javax.servlet.http.HttpServlet"%>
 <%@page import="javax.servlet.http.HttpServletRequest"%>
 <%@page import="javax.servlet.http.HttpServletResponse"%>
-<%@page import="javax.servlet.http.HttpSession"%> 
+<%@page import="javax.servlet.http.HttpSession"%>
+<%@page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
-
+  
 <c:url value="/recParam" var="urlForm"/>
 <c:url value="/Removedor" var="urlRemove"/>
 	
 <!DOCTYPE html>
 <html>
-<head> 
-	<meta charset="UTF-8">
+<head>
 	<title>WebCal MedUmi</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>  
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">  
@@ -30,10 +31,8 @@
  
  	
  	<ul class="nav nav-tabs"> 
- 	 <li class="nav-item" style="padding-left:35%;padding-bottom:5%" > 
-	    <button type="button" class="btn btn-outline-secondary">	  
-			<h1 class="display-5">Garten</h1>   
-		</button>  
+ 	 <li class="nav-item" style="padding-left:35%;padding-bottom:5%  " >
+         <h1>Garten</h1>
 	  </li> 
   	</ul> 
   	
@@ -50,7 +49,7 @@
 							<form id="formAmostra" action="${urlForm}" method="post">
 									<div class="form-group">
 										<label for="lab">
-										Laboratorio:
+										Laboratório:
 										</label>
 										<input class="form-control" id="lab" type="number" step="any" name="lab" autocomplete="off"/> 
 										<label for="grt">
@@ -74,7 +73,7 @@
 				<table class="table table-hover">
 					<thead>
 						<tr>
-							<th>Laboratorio</th>
+							<th>Laboratório</th>
 							<th>Garten</th>
 							<th></th>
 						</tr>	
@@ -85,45 +84,92 @@
 								<td >${amostra.amostraLaboratorio}</td>
 								<td > ${amostra.amostraGarten }</td>
 								<td>
-								<a class="btn btn-outline-danger" href="${urlRemove}?Id=${loop.index}" onclick="exclusaoMsg();">Remover </a>
+								<a class="btn btn-outline-danger" href="${urlRemove}?Id=${loop.index}" onclick="exclusaoMsg(event);">Remover </a>
 								</td> 
 						</tr>
 					</c:forEach>
 					</tbody>
 				</table> 
 			   
-				<script> 
-						var ctx = document.getElementById('myChart').getContext('2d');
+				<script>
+                        var ctx = document.getElementById('myChart').getContext('2d');
 						var chart = new Chart(ctx, {
 						    // The type of chart we want to create
-						    type: 'line',
-		
+						    type: 'bubble',
+
 						    // The data for our dataset
 						    data: {
-						        labels: [ ],
+
 						        datasets: [{
-						            label: "My First dataset",
+						            label: "Gráfico de amostras",
 						            backgroundColor: 'rgb(255, 99, 132)',
 						            borderColor: 'rgb(255, 99, 132)',
-						            data: [],
-						        }]
+						            data: [
+
+                                        <%
+                                        ListaAmostras amostras = (ListaAmostras)session.getAttribute("amostras");
+                                        if(amostras != null)
+                                        for(Amostra amostra : amostras){
+                                            out.println(amostra);
+                                        }
+                                        %>
+
+									],
+						        },
+                                    {
+                                        type:"line",
+                                        label: "Linha de tendência",
+                                        borderColor: 'rgb(132, 99, 255)',
+                                        backgroundColor: 'rgba(0,0,0,0)',
+                                        data: [
+
+                                            <%
+                                                if(amostras != null && !amostras.isEmpty() ){
+                                                double menorX, maiorX;
+                                                menorX = amostras.get(0).getAmostraGarten();
+                                                maiorX = amostras.get(0).getAmostraGarten();
+                                                for ( Amostra am: amostras ) {
+                                                    if(am.getAmostraGarten() < menorX){
+                                                        menorX = am.getAmostraGarten();
+                                                    }
+                                                    if(am.getAmostraGarten() > maiorX){
+                                                        maiorX = am.getAmostraGarten();
+                                                    }
+                                                }
+                                                double menorY, maiorY;
+                                                menorY = amostras.getLinearRegression().predict(menorX);
+                                                maiorY = amostras.getLinearRegression().predict(maiorX);
+
+                                                if(amostras != null && !amostras.isEmpty()){
+                                                    out.println("{x:"+menorX+", y:"+menorY+"},{x:"+maiorX+", y:"+maiorY+"}");
+
+                                                   }
+                                                }
+                                        %>
+
+                                        ],
+                                    }]
 						    },
 		
-						    // Configuration options go here
-						    options: {}
+						    // Configuração de opções para adicinar
+						    options: {
+                                onClick: chartClickEvent
+                            }
 						});
-				</script> 
-				
-				<script>
-					
-					function addData(chart, label, data) {
-					    chart.data.labels.push(label);
-					    chart.data.datasets.forEach((dataset),function(){ 
-					        dataset.data.push(data);
-					    });
-					    chart.update();
-					}
-					
+
+
+                        function exclusaoMsg(event){
+                            if(!confirm("Deseja mesmo excluir?")){
+
+                                event.preventDefault();
+                            }
+                        }
+
+                        function chartClickEvent(event){
+                            alert($(this));
+                        }
+
+
 				</script>
 				     
 
