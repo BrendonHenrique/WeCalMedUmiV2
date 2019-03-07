@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+<<<<<<< HEAD
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+=======
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
     <file url="file://$PROJECT_DIR$/src/main/webapp/pag1.jsp" charset="UTF-8" />
   </component>
 </project>

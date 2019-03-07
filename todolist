@@ -1,0 +1,37 @@
+Dependencies on maven project 
+-> JSTL 1.2
+-> Servlets API 3.1
+-> Junit
+
+<dependency>
+    <groupId>javax.servlet.jsp.jstl</groupId>
+    <artifactId>jstl</artifactId>
+    <version>1.2</version>
+</dependency>
+
+<dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
+      <scope>provided</scope>
+</dependency>
+
+
+
+
+MVC
+
+View 
+-> tela de interfaces 
+
+Model 
+-> classes 
+
+Controller 
+-> captura dados da interface , modela os dados com model e persiste os dados 
+
+DAO Data acess Object
+-> Camada para persistencia ou recuperação dos dados pelo BD (EXCLUI A AÇÃO DO CONTROLLER)
+
+
+

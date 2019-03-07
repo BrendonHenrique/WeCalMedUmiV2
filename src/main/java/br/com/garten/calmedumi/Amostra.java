@@ -13,8 +13,12 @@ public class Amostra {
 		this.amostraLaboratorio = Double.parseDouble(laboratorio);
 
 	}
+<<<<<<< HEAD
 	
 	
+=======
+
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
 
 	public Double getAmostraGarten() {
 		return amostraGarten;
