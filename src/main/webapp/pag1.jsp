@@ -2,8 +2,6 @@
 <%@page import="br.com.garten.calmedumi.ListaAmostras" %>
 <%@page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8" %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
-
 <c:url value="/recParam" var="urlForm"/>
 <c:url value="/Removedor" var="urlRemove"/>
 <c:url value="/Editor" var="urlEdita"/>
@@ -16,13 +14,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
-
-    <%--<script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>--%>
-    <%--<script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>--%>
-    <%--<link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.css" media="screen">--%>
-    <%--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>--%>
-
     <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.css" media="screen">
     <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
     <script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
@@ -35,14 +26,26 @@
 </head>
 
 <body>
-
-<ul class="nav nav-tabs">
-    <li class="nav-item" style="padding-left:35%;padding-bottom:5%">
-        <h1>Garten</h1>
-    </li>
-</ul>
-
 <div class="container">
+    <div class="row">
+        <div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand">
+                    <a href="http://garten.com.br/">
+                        <img src="garten.png" id="logo" alt="garten automação" title="Garten">
+                    </a>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" >Calibrador Web para MedUmi e Whiitekon </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="row">
 
@@ -62,125 +65,106 @@
                 <li class="nav-item">
                     <a class="nav-link" data-toggle="tab" href="#Calcular">Calcular</a>
                 </li>
-
             </ul>
 
+        <div id="myTabContent" class="tab-content" style="padding-bottom: 2rem" ;>
 
-
-
-            <div id="myTabContent" class="tab-content" style="padding-bottom: 2rem" ;>
-
-                <%--adicionar--%>
-                <div class="tab-pane fade show active" id="Adicionar">
-                    <p>
-                        <div class="card border-primary mb-4" style="max-width: 20rem;">
-                            <div class="card-header">Adicionar amostra
-                            </div>
-                            <div class="card-body">
-
-                                <form id="formAmostra" action="${urlForm}" method="post">
-                                    <div class="form-group">
-
-                                        <label for="grt">
-                                            Garten:
-                                        </label>
-                                        <input class="form-control" id="grt" type="number" step="any" name="grt"
-                                               autocomplete="off" tabindex="1" autofocus/>
-
-
-                                        <label for="lab">
-                                            Laboratório:
-                                        </label>
-                                        <input class="form-control" id="lab" type="number" step="any" name="lab"
-                                               autocomplete="off" tabindex="2"/>
-
-
-                                    </div>
-                                    <button value="Update" class="btn btn-outline-primary" type="submit" tabindex="3">Adicionar</button>
-                                </form>
-
-                            </div>
+            <%--adicionar--%>
+            <div class="tab-pane fade show active" id="Adicionar">
+                <p>
+                    <div class="card border-primary mb-4" style="max-width: 20rem;">
+                        <div class="card-header">Adicionar amostra
                         </div>
+                        <div class="card-body">
+                            <form id="formAmostra" action="${urlForm}" method="post">
+                                <div class="form-group">
+                                    <label for="grt">
+                                        Garten:
+                                    </label>
+                                    <input class="form-control" id="grt" type="number" step="any" name="grt"
+                                           autocomplete="off" tabindex="1" autofocus/>
+                                    <label for="lab">
+                                        Laboratório:
+                                    </label>
+                                    <input class="form-control" id="lab" type="number" step="any" name="lab"
+                                           autocomplete="off" tabindex="2"/>
+                                </div>
+                                <button value="Update" class="btn btn-outline-primary" type="submit" tabindex="3">Adicionar</button>
+                            </form>
+                        </div>
+                    </div>
+                </p>
+            </div>
+            <%--adicionar--%>
+
+
+            <%--editar--%>
+            <div class="tab-pane fade" id="Editar">
+                <p>
+                    <div class="card border-primary mb-4" style="max-width: 20rem;">
+                        <div class="card-header">
+                            <ul class="nav nav-pills">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                       aria-haspopup="true" aria-expanded="false">Escolha a amostra</a>
+                                    <div class="dropdown-menu" x-placement="bottom-start"
+                                         style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 40px, 0px);">
+                                        <c:forEach items="${amostras}" var="amostra" varStatus="loop">
+                                            <a class="dropdown-item" href="#"
+                                               onclick=" return editParameters(${amostra.amostraGarten },${amostra.amostraLaboratorio},${loop.index});"> ${loop.index}
+                                                ( ${amostra.amostraGarten } , ${amostra.amostraLaboratorio} )</a>
+                                        </c:forEach>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <form id="formEditar" action="${urlEdita}" method="post">
+                                <div class="form-group">
+                                    <label>
+                                        <input type="hidden" class="form-control" id="ID" name="ID" readonly/>
+                                    </label>
+                                    <label for="grt">
+                                        Garten:
+                                    </label>
+                                    <input class="form-control" id="grt2" type="number" step="any" name="grt2"
+                                           autocomplete="off" tabindex="4"/>
+                                    <label for="lab">
+                                        Laboratório:
+                                    </label>
+                                    <input class="form-control" id="lab2" type="number" step="any" name="lab2"
+                                           autocomplete="off" tabindex="5"/>
+                                </div>
+                                <button value="Update" class="btn btn-outline-primary" type="submit" tabindex="6">Editar</button>
+                            </form>
+                        </div>
+                    </div>
                     </p>
                 </div>
-
-
                 <%--editar--%>
-                <div class="tab-pane fade" id="Editar">
+
+
+
+                <%--Calcular--%>
+                <div class="tab-pane fade" id="Calcular">
                     <p>
-                        <div class="card border-primary mb-4" style="max-width: 20rem;">
-                            <div class="card-header">
-
-                                <ul class="nav nav-pills">
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                                           aria-haspopup="true" aria-expanded="false">Escolha a amostra</a>
-                                        <div class="dropdown-menu" x-placement="bottom-start"
-                                             style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 40px, 0px);">
-
-                                            <c:forEach items="${amostras}" var="amostra" varStatus="loop">
-                                                <a class="dropdown-item" href="#"
-                                                   onclick=" return editParameters(${amostra.amostraGarten },${amostra.amostraLaboratorio},${loop.index});"> ${loop.index}
-                                                    ( ${amostra.amostraGarten } , ${amostra.amostraLaboratorio} )</a>
-                                            </c:forEach>
-
-                                        </div>
-                                    </li>
-                                </ul>
-
-                            </div>
-                            <div class="card-body">
-                                <form id="formEditar" action="${urlEdita}" method="post">
-                                    <div class="form-group">
-
-                                        <label>
-                                            <input type="hidden" class="form-control" id="ID" name="ID" readonly/>
-                                        </label>
-
-                                        <label for="grt">
-                                            Garten:
-                                        </label>
-                                        <input class="form-control" id="grt2" type="number" step="any" name="grt2"
-                                               autocomplete="off" tabindex="4"/>
-
-                                        <label for="lab">
-                                            Laboratório:
-                                        </label>
-                                        <input class="form-control" id="lab2" type="number" step="any" name="lab2"
-                                               autocomplete="off" tabindex="5"/>
-
-                                    </div>
-                                    <button value="Update" class="btn btn-outline-primary" type="submit" tabindex="6">Editar</button>
-                                </form>
-                            </div>
+                    <div class="card border-primary mb-4" style="max-width: 20rem;">
+                        <div class="card-header">Calibrar
                         </div>
-                        </p>
-                    </div>
-
-                    <%--Calcular--%>
-
-                    <div class="tab-pane fade" id="Calcular">
-                        <p>
-                        <div class="card border-primary mb-4" style="max-width: 20rem;">
-                            <div class="card-header">Calibrar
-                            </div>
-                            <div class="card-body">
-
-                                <form id="formCalcular" action="${urlCalibrar}?slope=${amostras.getSlope()}&intercept=${amostras.getIntercept()}" method="post">
-                                    <div class="form-group">
-
-                                        <input class="form-control" id="grt3" type="number" step="any" name="n"
-                                               autocomplete="off" tabindex="1" placeholder="Informe valor antigo"/>
-                                        <hr class="my-4">
-                                    </div>
-
-                                    <button value="Update" class="btn btn-outline-primary" type="submit" tabindex="3">Calcular</button>
-                                </form>
-
-                            </div>
+                        <div class="card-body">
+                            <form id="formCalcular" action="${urlCalibrar}?slope=${amostras.getSlope()}&intercept=${amostras.getIntercept()}" method="post">
+                                <div class="form-group">
+                                    <input class="form-control" id="grt3" type="number" step="any" name="n"
+                                           autocomplete="off" tabindex="1" placeholder="Informe valor antigo"/>
+                                    <hr class="my-4">
+                                </div>
+                                <button value="Update" class="btn btn-outline-primary" type="submit" tabindex="3">Calcular</button>
+                            </form>
                         </div>
-                        </p>
                     </div>
+                    </p>
+                </div>
+                <%--Calcular--%>
 
             </div>
         </div>
@@ -193,7 +177,6 @@
         <c:out value="${resultado ne null ? resultado : ''}"/>
 
         <c:out value="${amostras ne null and nValue eq null and amostras.size() gt 1  ? amostras.getLinearRegression():'' }"/>
-
 
     </h1>
 
@@ -303,6 +286,7 @@
 
 
         </script>
+
     </div>
 </div>
 </body>
