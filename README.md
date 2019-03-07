@@ -1,6 +1,4 @@
-WeCalMedUmiV2
-<<<<<<< HEAD
-=======
+WeCalMedUmiV2 
 Linear Regression calculator
 
 WebCalMedUmiV2 Allow the user to:
@@ -12,5 +10,4 @@ WebCalMedUmiV2 Allow the user to:
 - Calculate the regression equation.
 
 Everything updating in real time into graphic. 
-
->>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
+ 

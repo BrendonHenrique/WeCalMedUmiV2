@@ -3,6 +3,7 @@
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <artifact name="WebCalMedUmi:war exploded" />
     </artifacts-to-build>
   </component>
@@ -12,6 +13,8 @@
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
 =======
+=======
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
       <artifact name="WebCalMedUmi:war" />
     </artifacts-to-build>
   </component>
@@ -27,6 +30,9 @@
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+<<<<<<< HEAD
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
+=======
 >>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +40,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <leaf />
   </component>
@@ -44,6 +51,8 @@
       </list>
     </option>
 =======
+=======
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
@@ -54,11 +63,15 @@
       <find>ListaAmostras</find>
       <find>amostras</find>
     </findStrings>
+<<<<<<< HEAD
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
+=======
 >>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -83,6 +96,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
 =======
+=======
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -96,6 +111,9 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
+=======
 >>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -122,6 +140,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="x" value="1400" />
     <option name="y" value="223" />
     <option name="width" value="1211" />
@@ -144,6 +163,8 @@
     </navigator>
     <panes>
 =======
+=======
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
     <option name="x" value="1248" />
     <option name="width" value="1221" />
     <option name="height" value="615" />
@@ -156,13 +177,20 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="Scope" />
+<<<<<<< HEAD
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
+=======
 >>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
 <<<<<<< HEAD
+<<<<<<< HEAD
               <item name="WeCalMedUmiV2" type="b2602c69:ProjectViewProjectNode" />
+=======
+              <item name="WebCalMedUmi" type="b2602c69:ProjectViewProjectNode" />
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
 =======
               <item name="WebCalMedUmi" type="b2602c69:ProjectViewProjectNode" />
 >>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
@@ -173,10 +201,13 @@
         </subPane>
       </pane>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="AndroidView" />
+=======
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
 =======
 >>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
     </panes>
@@ -185,18 +216,24 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/gerenciador" />
 =======
+=======
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551941111896" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+<<<<<<< HEAD
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
+=======
 >>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
   </component>
   <component name="RunDashboard">
@@ -212,6 +249,7 @@
     </option>
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="RunManager" selected="Tomcat Server.Servidor">
     <configuration name="Servidor" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.16" ALTERNATIVE_JRE_ENABLED="false">
       <option name="SHOW_DIALOG_ON_UPDATE" value="false" />
@@ -221,6 +259,8 @@
           <settings>
             <option name="CONTEXT_PATH" value="/" />
 =======
+=======
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
   <component name="RunManager">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
@@ -257,11 +297,15 @@
         <artifact name="WebCalMedUmi:war">
           <settings>
             <option name="CONTEXT_PATH" value="/WebCalMedUmi_war" />
+<<<<<<< HEAD
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
+=======
 >>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
           </settings>
         </artifact>
       </deployment>
       <server-settings>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_WebCalMedUmi" />
       </server-settings>
@@ -274,6 +318,8 @@
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="40761" />
 =======
+=======
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_WebCalMedUmi_2" />
         <option name="HTTP_PORT" value="8081" />
         <option name="JNDI_PORT" value="1098" />
@@ -285,6 +331,9 @@
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="34927" />
+<<<<<<< HEAD
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
+=======
 >>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
@@ -332,6 +381,7 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <method>
         <option name="BuildArtifacts" enabled="true">
@@ -472,6 +522,8 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
 =======
+=======
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
@@ -491,6 +543,9 @@
   </component>
   <component name="SvnConfiguration">
     <configuration />
+<<<<<<< HEAD
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
+=======
 >>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
   </component>
   <component name="TaskManager">
@@ -501,6 +556,7 @@
       <option name="presentableId" value="Default" />
       <updated>1551717584998</updated>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1551717590986" duration="11136000" />
       <workItem from="1551728828610" duration="2254000" />
       <workItem from="1551731449205" duration="67000" />
@@ -510,10 +566,15 @@
       <workItem from="1551717590986" duration="7300000" />
       <workItem from="1551923566812" duration="17284000" />
 >>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
+=======
+      <workItem from="1551717590986" duration="7300000" />
+      <workItem from="1551923566812" duration="17284000" />
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="30190000" />
   </component>
@@ -551,6 +612,8 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
 =======
+=======
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
     <option name="totallyTimeSpent" value="24584000" />
   </component>
   <component name="TodoView">
@@ -598,12 +661,16 @@
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
+<<<<<<< HEAD
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
+=======
 >>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -627,6 +694,8 @@
         <state relative-caret-position="300">
           <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
 =======
+=======
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
@@ -636,11 +705,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+<<<<<<< HEAD
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
+=======
 >>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+<<<<<<< HEAD
 <<<<<<< HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -663,18 +736,24 @@
           <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="26" selection-end-column="0" />
           <folding />
 =======
+=======
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/garten/calmedumi/Removedor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="387">
           <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+<<<<<<< HEAD
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
+=======
 >>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/garten/calmedumi/Amostra.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="345">
           <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
@@ -723,6 +802,8 @@
           </first_editor>
           <second_editor />
 =======
+=======
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
         <state relative-caret-position="195">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
@@ -761,12 +842,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="34" column="39" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="39" />
+<<<<<<< HEAD
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
+=======
 >>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/pag1.jsp">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
         <state relative-caret-position="285">
           <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
@@ -777,6 +862,8 @@
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
 =======
+=======
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
         <state relative-caret-position="210">
           <caret line="190" column="38" lean-forward="true" selection-start-line="190" selection-start-column="38" selection-end-line="190" selection-end-column="38" />
           <folding>
@@ -785,13 +872,19 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#li#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+<<<<<<< HEAD
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
+=======
 >>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
           </folding>
         </state>
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/garten/calmedumi/CalcularCalibracao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -799,6 +892,9 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
+=======
 >>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
   </component>
   <component name="masterDetails">
@@ -843,7 +939,11 @@
       <state key="JdkListConfigurable.UI">
         <settings>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <last-edited>1.8</last-edited>
+=======
+          <last-edited>11</last-edited>
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
 =======
           <last-edited>11</last-edited>
 >>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
@@ -864,7 +964,10 @@
               <list>
                 <option value="0.2" />
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <option value="0.6" />
+=======
+>>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
 =======
 >>>>>>> f3b4a411eca04a4ef42e41a468aa72ae94b4974a
               </list>
