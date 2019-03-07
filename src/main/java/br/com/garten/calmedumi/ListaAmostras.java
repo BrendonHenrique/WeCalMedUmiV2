@@ -31,4 +31,14 @@ public class ListaAmostras extends LinkedList<Amostra>{
 		return new LinearRegression(getAmostrasGarten(), getAmostrasLaboratorio());
 	}
 
+	public double getSlope(){
+		LinearRegression linearSlope = getLinearRegression();
+		return linearSlope.slope();
+	}
+
+	public double getIntercept(){
+		LinearRegression linearIntercept =  getLinearRegression();
+		return linearIntercept.intercept();
+	}
+
 }

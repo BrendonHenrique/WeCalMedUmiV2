@@ -13,8 +13,7 @@ public class Amostra {
 		this.amostraLaboratorio = Double.parseDouble(laboratorio);
 
 	}
-	
-	
+
 
 	public Double getAmostraGarten() {
 		return amostraGarten;
