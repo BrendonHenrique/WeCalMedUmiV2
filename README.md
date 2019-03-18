@@ -12,5 +12,5 @@ WebCalMedUmiV2 Allow the user to:
 
 Everything updating in real time into graphic. 
 
-- This project was been created using Maven web archetype project using Java Servlets , Java Server Pages , JSP Standard Tag Library , HTML , CSS.  
+- This project was been created using Maven web archetype project using Java Servlets , Java Server Pages , JSP Standard Tag Library , HTML , CSS and Chart.JS API.  
  
