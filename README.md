@@ -1,6 +1,5 @@
 WeCalMedUmiV2 
 Linear Regression calculator
-![alt text](https://raw.githubusercontent.com/BrendonHenrique/WeCalMedUmiV2/master/Captura%20de%20Tela_20190318025153.png)
 
 WebCalMedUmiV2 Allow the user to:
 
